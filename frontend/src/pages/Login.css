@@ -1,0 +1,110 @@
+/* Container for the login page */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #fff;
+  /* Optional background */
+  /* background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url('/bg.jpg') no-repeat center center/cover; */
+}
+
+/* Login form title */
+.login-page h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* Form styling */
+.login-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(34, 34, 34, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Submit button */
+.login-page button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-page button[type="submit"]:hover {
+  background-color: #f0f0f0;
+}
+
+/* Sign-up link */
+.login-page .signup-link {
+  margin-top: 15px;
+}
+
+.login-page .signup-link p {
+  color: #ccc;
+}
+
+.login-page .signup-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-page .signup-link a:hover {
+  color: #f0f0f0;
+}
+
+/* Icon input container */
+.input-icon-container {
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+/* Wrapper for icon + input */
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+/* Icon inside input */
+.input-icon {
+  width: 18px;
+  height: 18px;
+  color: #ccc;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+/* Input inside wrapper */
+.input-wrapper input {
+  flex: 1;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+/* Placeholder inside wrapper input */
+.input-wrapper input::placeholder {
+  color: #ccc;
+}

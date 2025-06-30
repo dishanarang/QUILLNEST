@@ -1,0 +1,322 @@
+.homepage {
+  background-color: #f0fdf4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.hero {
+  padding: 2rem;
+  text-align: center;
+  background-color: #e0f7ea;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #444;
+}
+
+
+
+
+
+.teacher-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 40px 20px; /* top-right-left 40px, bottom 20px */
+  justify-content: center;
+  background-color: #eafff0;
+}
+
+
+.teacher-card {
+  background-color: #f0fff5;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Use flex-start instead of center */
+  transition: transform 0.2s ease;
+}
+
+
+.teacher-card:hover {
+  transform: translateY(-5px);
+}
+
+.teacher-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #d1f7e2;
+}
+
+/* Make email break properly and avoid overflow */
+.teacher-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+  word-break: break-word;
+  text-align: center;
+}
+
+
+/* Footer styles */
+.footer {
+  background-color: #0f172a;
+  color: white;
+  padding: 3rem 2rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-brand img {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  max-width: 400px;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.footer-links div h4 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.footer-links ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-top: 2rem;
+}
+
+.quill-logo {
+  margin-bottom: 1rem;
+}
+
+.quill-svg {
+  width: 48px;
+  height: 48px;
+  stroke: #38bdf8; /* Light blue or adjust to your brand color */
+}
+
+.quill-logo-with-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* spacing between icon and text */
+  margin-bottom: 1rem;
+}
+
+.quill-logo-with-name svg {
+  width: 32px;
+  height: 32px;
+  stroke: #ffffff; /* white for visibility on dark bg */
+}
+
+.quill-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.explore-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: #1f2937; /* Dark grey */
+}
+
+.features-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  color: #1f2937;
+}
+
+.features-subheading {
+  text-align: center;
+  color: #475569;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.brand-color {
+  color: #10b981; /* Emerald / green */
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem 4rem;
+}
+
+.feature-card {
+  background-color: #d3e8ef;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  background-color: #efe8cc;
+  color: #6605b6;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.feature-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.how-it-works {
+  background-color: #f8fafc;
+  padding: 3rem 2rem;
+}
+
+.how-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.how-subheading {
+  text-align: center;
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 3rem;
+}
+
+.how-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.step-badge {
+  background-color: #10b981;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-icon {
+  background-color: #d1fae5;
+  color: #059669;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.step p {
+  margin: 0.3rem 0 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .how-steps {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+

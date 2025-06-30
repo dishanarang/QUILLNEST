@@ -1,0 +1,122 @@
+/* Positioning container at bottom-right */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+}
+
+/* Toggle icon (chat.jpg) */
+.chatbot-icon {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.chatbot-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Chat window */
+.chat-window {
+  width: 320px;
+  height: 420px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  overflow: hidden;
+  animation: slideUp 0.3s ease;
+}
+
+/* Chat header */
+.chat-header {
+  background: linear-gradient(to right, #4f46e5, #9333ea);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Chat body (messages) */
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-message {
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+  font-size: 0.95rem;
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.chat-message.bot {
+  align-self: flex-start;
+  background-color: #e0e7ff;
+  color: #1e40af;
+}
+
+/* Chat input section */
+.chat-input {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  gap: 8px;
+  background-color: #f9fafb;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.chat-input button {
+  padding: 8px 16px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.chat-input button:hover {
+  background: #4338ca;
+}
+
+/* Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
