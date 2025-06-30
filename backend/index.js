@@ -9,6 +9,11 @@ const { Server } = require('socket.io');
 const ChatMessage = require('./models/chatMessageModel'); // make sure model is created
 const dotenv=require('dotenv');
 dotenv.config();
+app.use(cors({
+  origin: 'https://quillnest-nine.vercel.app',
+  credentials: true
+}));
+
 const io = new Server(server, {
   cors: {
     origin: process.env.FRONTEND_URL,
@@ -22,25 +27,26 @@ const io = new Server(server, {
 const port=process.env.PORT
 require('./db')
 
-const allowedOrigins = [process.env.FRONTEND_URL]; // Add more origins as needed
+//const allowedOrigins = [process.env.FRONTEND_URL]; // Add more origins as needed
+
 
 
 
 
 //only urls provided above can send request to my backend
-app.use(
-    cors({
-        origin: function (origin, callback) {
-            if (!origin || allowedOrigins.includes(origin)) {
-                callback(null, true);
-            }
-            else {
-                callback(new Error('Not allowed by CORS'));
-            }
-        },
-        credentials: true
-    })
-) 
+// app.use(
+//     cors({
+//         origin: function (origin, callback) {
+//             if (!origin || allowedOrigins.includes(origin)) {
+//                 callback(null, true);
+//             }
+//             else {
+//                 callback(new Error('Not allowed by CORS'));
+//             }
+//         },
+//         credentials: true
+//     })
+// ) 
 
 
 
