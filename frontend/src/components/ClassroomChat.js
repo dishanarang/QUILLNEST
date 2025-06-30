@@ -7,6 +7,7 @@ import { useAuth } from '../context/AuthContext';
 const socket = io(process.env.REACT_APP_API_BASE_URL, {
   transports: ['websocket'],
   withCredentials: true,
+  path: '/socket.io',
 });
 
 const ClassroomChat = ({ classroomId, classroomOwnerId }) => {
