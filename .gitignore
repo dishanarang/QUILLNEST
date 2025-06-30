@@ -1,0 +1,11 @@
+# Ignore env files in both frontend and backend
+frontend/.env
+backend/.env
+
+# (optional) common ignores
+node_modules/
+dist/
+build/
+*.log
+.vscode/
+.env
