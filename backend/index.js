@@ -9,6 +9,7 @@ const { Server } = require('socket.io');
 const ChatMessage = require('./models/chatMessageModel'); // make sure model is created
 const dotenv=require('dotenv');
 dotenv.config();
+
 app.use(cors({
   origin: 'https://quillnest-nine.vercel.app',
   credentials: true
@@ -16,7 +17,7 @@ app.use(cors({
 
 const io = new Server(server, {
   cors: {
-    origin: process.env.FRONTEND_URL,
+    origin: 'https://quillnest-nine.vercel.app',
     credentials: true,
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
