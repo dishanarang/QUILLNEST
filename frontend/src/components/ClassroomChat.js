@@ -4,7 +4,7 @@ import ScrollToBottom from 'react-scroll-to-bottom';
 import io from 'socket.io-client';
 import { useAuth } from '../context/AuthContext';
 
-const socket = io(process.env.REACT_APP_API_BASE_URL, {
+const socket = io('https://quillnest-backend.onrender.com', {
   transports: ['websocket'],
   withCredentials: true,
   path: '/socket.io',
