@@ -5,7 +5,7 @@ import io from 'socket.io-client';
 import { useAuth } from '../context/AuthContext';
 
 const socket = io('https://quillnest-backend.onrender.com', {
-  transports: ['websocket'],
+  transports: ['websocket','polling'],
   withCredentials: true,
   path: '/socket.io',
 });
